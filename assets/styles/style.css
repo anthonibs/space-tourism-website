@@ -23,6 +23,23 @@ body {
     color: var(--c-white);
 }
 
+/* ANIMAÇÕES KEYFRAMES */
+@keyframes planetGira {
+	0% {
+        transform: scale(1);
+	}
+    50% {
+        transform: scale(1.03);
+    }
+    75% {
+        transform: scale(1.1);
+	}
+    100% {
+        transform: scale(1);
+	} 
+}
+
+
 /* NAVBAR HEADER */
 header {
     display: inline-flex;
@@ -61,7 +78,7 @@ header {
     display: flex;
     height: 100%;
     justify-content: center;
-    gap: 52px;
+    gap: 37px;
 }
 
 .navbar-wrapper li {
@@ -71,7 +88,8 @@ header {
     height: 100%;
 }
 
-.navbar-wrapper li::after, .nav-group-destination li::after {
+/* TRAÇO EMBAIXO DO NAVEGAÇÃO */
+.navbar-wrapper a::after, .nav-group-destination a::after {
     content: '';
     display: flex;
     position: absolute;
@@ -87,8 +105,15 @@ header {
     opacity: 20%;
 }
 
-.navbar-wrapper li:hover::after, .nav-group-destination li:hover::after {
+/* HOVER PARA MOSTAR QUAL ABA ESTÁ PASSANDO O MOUSE */
+.navbar-wrapper a:hover::after, .nav-group-destination a:hover::after {
     transform: scale(1, 1);
+}
+
+/* DEIXA ATIVADO A ABA DE NAVEGAÇÃO */
+.active::after {
+    transform: scale(1, 1) !important;
+    opacity: 1 !important;
 }
 
 .navbar-link, .nav-link-destination {
@@ -97,6 +122,8 @@ header {
     letter-spacing: .2rem;
     text-transform: uppercase;
     color: var(--c-white);
+    cursor: pointer;
+    padding: 15px;
 }
 
 .nav-link-destination {
@@ -109,7 +136,7 @@ header {
     margin-right: 12px;
 }
 
-.bg-home, .bg-destination {
+.bg-home, .bg-destination, .bg-crew  {
     width: 100%;
     height: 100vh;
     background-image: url(/assets/images/home/background-home-desktop.jpg);
@@ -118,8 +145,12 @@ header {
     background-size: cover;
 }
 
-.bg-destination  {
+.bg-destination {
     background-image: url(/assets/images/destination/background-destination-desktop.jpg);
+}
+
+.bg-crew {
+    background-image: url(/assets/images/crew/background-crew-desktop.jpg);
 }
 
 /* Section Space */
@@ -155,10 +186,10 @@ header {
     color: var(--c-blue-light);
 }
 
-.space-wrapper p, .destination-items-info {
+.space-wrapper p, .destination-items-description {
     font-weight: normal;
     line-height: 1.5;
-    word-break: break-all;
+    word-wrap: break-word;
     color: var(--c-blue-light);
 }
 
@@ -180,7 +211,11 @@ header {
 
 .circle-explore:active {
    box-shadow: 0px 0px 0px 60px rgba(255, 255, 255, 0.1);
-   transition: all 0.2s;
+   transition: all 0.15s;
+}
+
+.circle-explore a {
+    padding: 50px 30px;
 }
 
 .circle-explore h2 {
@@ -194,7 +229,7 @@ header {
 .destination-container {
     width: 100%;
     height: 100%;
-    padding: 15% 165px 0;
+    padding: 20% 10% 0px;
 }
 
 .destination-container h3 {
@@ -211,17 +246,10 @@ header {
 
 .destination-wrapper {
     display: grid;
-    grid-template-columns: repeat(2, minmax(445px, 1fr));
+    width: 100%;
+    grid-template-columns: repeat(2, 445px);
     gap: 160px;
     padding-left: 65px;
-}
-
-.destination-aside-img {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
 }
 
 .destination-aside-img img {
@@ -230,6 +258,12 @@ header {
     height: auto;
     object-position: center;
     object-fit: cover;
+    animation: planetGira 10s linear infinite;
+}
+
+.destination-aside {
+    display: flex;
+    flex-direction: column;
 }
 
 .nav-group-destination {
@@ -240,8 +274,11 @@ header {
 
 .destination-aside-items {
     display: flex;
-    flex-direction: column;
-    height: 100%;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;   
+    overflow: hidden;
+    gap: 30px;
 }
 
 .destination-aside-items .risk-header {
@@ -250,3 +287,32 @@ header {
     margin: 40px 0 20px;
     left: 0px;
 }
+
+.destination-aside-card {
+    
+}
+
+.destination-info-container {
+    display: flex;
+    gap: 80px;
+}
+
+.destination-info-items span {
+    font-size: var(--font-sz-7);
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+    color: var(--c-blue-light);
+}
+
+.destination-info-items p {
+    font-size: var(--font-sz-5);
+    font-family: var(--font-fm-bellefair);
+    text-transform: uppercase;
+    margin-top: 10px;
+    color: var(--c-white);
+}
+
+.destination-items-description {
+    width: 445px;
+}
+

@@ -19,9 +19,9 @@
         <hr class="risk-header">
         <nav class="navbar-container">
             <ul class="navbar-wrapper">
-                <li><a class="navbar-link" href="#"><span class="st-link">00</span>Início</a></li>
-                <li><a class="navbar-link" href="#"><span class="st-link">01</span>Destino</a></li>
-                <li><a class="navbar-link" href="#"><span class="st-link">02</span>Tripulação</a></li>
+                <li><a class="navbar-link" href="../../index.html"><span class="st-link">00</span>Início</a></li>
+                <li><a class="navbar-link active" href="index.html"><span class="st-link">01</span>Destino</a></li>
+                <li><a class="navbar-link" href="/pages/tripulacao/index.html"><span class="st-link">02</span>Tripulação</a></li>
                 <li><a class="navbar-link" href="#"><span class="st-link">03</span>Tecnologia</a></li>
             </ul>
         </nav>
@@ -38,38 +38,123 @@
                     <div class="destination-aside">
                         <nav class="nav-control-destination">
                             <ul class="nav-group-destination">
-                                <li><a class="nav-link-destination" href="#">Lua</a></li>
-                                <li><a class="nav-link-destination" href="#">Marte</a></li>
-                                <li><a class="nav-link-destination" href="#">Europa</a></li>
-                                <li><a class="nav-link-destination" href="#">Titã</a></li>
+                                <li><a class="nav-link-destination active" data-nav="1" ref="#">Lua</a></li>
+                                <li><a class="nav-link-destination" data-nav="2" href="#">Marte</a></li>
+                                <li><a class="nav-link-destination" data-nav="3" href="#">Europa</a></li>
+                                <li><a class="nav-link-destination" data-nav="4" href="#">Titã</a></li>
                             </ul>
                         </nav>
-                       
-                        <div class="destination-aside-items">
-                            <h2 class="destination-items-title">Lua</h2>
-                            <p class="destination-items-info">
-                                Veja nosso planeta como você nunca viu antes. Uma viagem relaxante perfeita para ajudar
-                                recuperar a perspectiva e voltar revigorado. Enquanto estiver lá, conheça um pouco da
-                                história visitando os locais de pouso Luna 2 e Apollo 11.
-                            </p>
-                            <hr class="risk-header">
-                            <div>
-                                <div>
-                                    <span>Média. distância</span>
-                                    <p>384.400 KM</p>
-                                </div>
 
+                        <ul class="destination-aside-items">
+                            <li class="destination-aside-card box1">
+                                <h2 class="destination-items-title">Lua</h2>
                                 <div>
-                                    <span>Est. tempo de viagem</span>
-                                    <p>3 dias</p>
+                                    <p class="destination-items-description">
+                                        Veja nosso planeta como você nunca viu antes. Uma viagem relaxante perfeita para
+                                        ajudar
+                                        recuperar a perspectiva e voltar revigorado. Enquanto estiver lá, conheça um pouco
+                                        da
+                                        história visitando os locais de pouso Luna 2 e Apollo 11.
+                                    </p>
                                 </div>
-                            </div>
-                        </div>
+                                <hr class="risk-header">
+                                <div class="destination-info-container">
+                                    <div class="destination-info-wrapper">
+                                        <div class="destination-info-items">
+                                            <span>Méd. distância</span>
+                                            <p>384.400 KM</p>
+                                        </div>
+                                    </div>
+                                    <div class="destination-info-wrapper">
+                                        <div class="destination-info-items">
+                                            <span>Est. tempo de viagem</span>
+                                            <p>3 dias</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="destination-aside-card box2">
+                                <h2 class="destination-items-title">Marte</h2>
+                                <p class="destination-items-description">
+                                    Não se esqueça de levar suas botas de caminhada. Você precisará deles para enfrentar
+                                    o Monte Olimpo, a montanha planetária mais alta do nosso sistema solar. São duas
+                                    vezes e meia do tamanho do Everest!
+                                </p>
+                                <hr class="risk-header">
+                                <div class="destination-info-container">
+                                    <div class="destination-info-wrapper">
+                                        <div class="destination-info-items">
+                                            <span>Méd. distância</span>
+                                            <p>225 MIL. KM</p>
+                                        </div>
+                                    </div>
+                                    <div class="destination-info-wrapper">
+                                        <div class="destination-info-items">
+                                            <span>Est. tempo de viagem</span>
+                                            <p>9 meses</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="destination-aside-card box3">
+                                <h2 class="destination-items-title">Europa</h2>
+                                <p class="destination-items-description">
+                                    A menor das quatro luas galileanas que orbitam Júpiter, Europa é uma
+                                    o sonho do amante de inverno. Com uma superfície gelada, é perfeito para um pouco de
+                                    patinação no gelo, curling, hóquei ou simples relaxamento em seu confortável
+                                    cabana invernal.
+                                </p>
+                                <hr class="risk-header">
+                                <div class="destination-info-container">
+                                    <div class="destination-info-wrapper">
+                                        <div class="destination-info-items">
+                                            <span>Méd. distância</span>
+                                            <p>628 MIL. KM</p>
+                                        </div>
+                                    </div>
+                                    <div class="destination-info-wrapper">
+                                        <div class="destination-info-items">
+                                            <span>Est. tempo de viagem</span>
+                                            <p>3 anos</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="destination-aside-card box4">
+                                <h2 class="destination-items-title">Titã</h2>
+                                <p class="destination-items-description">
+                                    A única lua conhecida por ter uma atmosfera densa além da Terra, Titã
+                                    é um lar longe de casa (apenas algumas centenas de graus mais frio!). Como um
+                                    bônus, você obtém vistas impressionantes dos anéis de Saturno.
+                                </p>
+                                <hr class="risk-header">
+                                <div class="destination-info-container">
+                                    <div class="destination-info-wrapper">
+                                        <div class="destination-info-items">
+                                            <span>Méd. distância</span>
+                                            <p>1.6 BIL. KM</p>
+                                        </div>
+                                    </div>
+                                    <div class="destination-info-wrapper">
+                                        <div class="destination-info-items">
+                                            <span>Est. tempo de viagem</span>
+                                            <p>7 anos</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
                     </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <script src="/assets/js/main.js"></script>
 </body>
 
 </html>
