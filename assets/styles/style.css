@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
+
+:root {
+    /* COLORS */
+    --c-dark: #0B0D17;
+    --c-blue-light: #D0D6F9;
+    --c-white: #FFF;
+    /* TYPOGRAPHY */
+    --font-sz-1: 150px;
+    --font-sz-2: 100px;
+    --font-sz-3: 56px;
+    --font-sz-4: 32px;
+    --font-sz-5: 28px;
+    --font-sz-6: 16px;
+    --font-sz-7: 14px;
+    --font-fm-bellefair: 'Bellefair';
+    --font-fm-barlow: 'Barlow Condensed', sans-serif;
+}
+
+body {
+    font-size: 18px;
+    font-family: var(--font-fm-barlow);
+    color: var(--c-white);
+}
+
+/* NAVBAR HEADER */
+header {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 40px;
+    width: 100%;
+    height: 96px;
+    margin-left: 55px;
+    padding-right: 55px;
+}
+
+.logo-container {
+    position: relative;
+}
+
+.risk-header {
+    width: 473px;
+    height: 1px;
+    position: absolute;
+    left: 108px;
+    background-color: white;
+    opacity: 25.15%;
+    z-index: 100;
+}
+
+.navbar-container {
+    height: 100%;
+    width: 830px;
+    backdrop-filter: blur(4px);
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+.navbar-wrapper {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    gap: 52px;
+}
+
+.navbar-wrapper li {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    height: 100%;
+}
+
+.navbar-wrapper li::after {
+    content: '';
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 6px;
+    left: 0px;
+    transition: all 300ms ease-out;
+    transform: scale(0, 1);
+    transform-origin: center;
+    background-color: var(--c-white);
+    opacity: 20%;
+}
+
+.navbar-wrapper li:hover::after {
+    transform: scale(1, 1);
+}
+
+.navbar-link {
+    font-size: var(--font-sz-6);
+    font-family: var(--font-fm-barlow);
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    color: var(--c-white);
+}
+
+.navbar-link .st-link {
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 12px;
+}
+
+.bg-home {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/assets/images/home/background-home-desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Section Space */
+.space-section {
+    height: 350px;
+    max-width: 580px;
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+}
+
+.space-wrapper {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.space-wrapper h1 {
+    font-size: var(--font-sz-1);
+    font-family: var(--font-fm-bellefair);
+    text-transform: uppercase;
+}
+
+.space-wrapper h2 {
+    font-size: var(--font-sz-5);
+    text-transform: uppercase;
+    color: var(--c-blue-light);
+}
+
+.space-wrapper p {
+    font-weight: normal;
+    line-height: 1.5;
+    word-break: break-all;
+    color: var(--c-blue-light);
+}
+
+
+/* Circle Explore Home */
+.circle-explore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    width: 274px;
+    height: 274px;
+    border-radius: 50%;
+    background-color: var(--c-white);
+    cursor: pointer;
+}
+
+.circle-explore:active {
+   box-shadow: 0px 0px 0px 60px rgba(255, 255, 255, 0.1);
+   transition: all 0.2s;
+}
+
+.circle-explore h2 {
+    font-size: var(--font-sz-4);
+    font-family: var(--font-fm-bellefair);
+    color: var(--c-dark);
+    text-transform: uppercase;
+}
