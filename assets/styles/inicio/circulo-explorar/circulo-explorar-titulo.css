@@ -1,0 +1,6 @@
+.circulo-explorar__titulo {
+    font-size: var(--f-size-4);
+    font-family: var(--f-family-bellefair);
+    color: var(--c-dark);
+    text-transform: uppercase;
+}

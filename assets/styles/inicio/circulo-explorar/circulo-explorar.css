@@ -1,0 +1,23 @@
+/* LINKS CSS */
+@import url(circulo-explorar-titulo.css);
+@import url(circulo-explorar-link.css);
+
+/* Circle Explore Home */
+.circulo-explorar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    width: 274px;
+    height: 274px;
+    border-radius: 50%;
+    background-color: var(--c-white);
+    cursor: pointer;
+}
+
+.circulo-explorar:active {
+    box-shadow: 0px 0px 0px 60px rgba(255, 255, 255, 0.1);
+    transition: all 0.15s;
+ }

@@ -1,44 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/images/logo.svg" type="image/x-icon"> 
-    <link rel="stylesheet" href="/assets/styles/reset.css">
-    <link rel="stylesheet" href="/assets/styles/style.css">
+    <link rel="shortcut icon" href="assets/images/logo.svg" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="/assets/styles/_reset.css">
+    <link rel="stylesheet" href="/assets/styles/style.css"> -->
+    <link rel="stylesheet" href="assets/styles/base.css">
+    <link rel="stylesheet" href="assets/styles/inicio/fundo-inicio.css">
     <title>Turismo Espacial</title>
 </head>
+
 <body>
-    <header>
-        <div class="logo-container">
-            <img src="starter-code/assets/shared/logo.svg" alt="Logo Turismo Espacial">
+    <header class="cabecalho">
+        <div class="cabecalho__logo">
+            <img src="starter-code/assets/shared/logo.svg" alt="Logo Turismo Espacial" class="cabecalho__imagem">
         </div>
-        <hr class="risk-header">
-        <nav class="navbar-container">
-            <ul class="navbar-wrapper">
-                <li><a class="navbar-link active" href="/index.html"><span class="st-link">00</span>Início</a></li>
-                <li><a class="navbar-link" href="/pages/destinos/index.html"><span class="st-link">01</span>Destino</a></li>
-                <li><a class="navbar-link" href="/pages/tripulacao/index.html"><span class="st-link">02</span>Tripulação</a></li>
-                <li><a class="navbar-link" href="#"><span class="st-link">03</span>Tecnologia</a></li>
+
+        <div class="cabecalho__linha"></div>
+
+        <nav class="menu">
+            <ul class="menu__lista">
+                <li class="menu__item"><a class="menu__link ativo" href="/index.html"><span
+                            class="menu__contador">00</span>Início</a></li>
+                <li class="menu__item"><a class="menu__link" href="/pages/destinos/index.html"><span
+                            class="menu__contador">01</span>Destino</a></li>
+                <li class="menu__item"><a class="menu__link" href="/pages/tripulacao/index.html"><span
+                            class="menu__contador">02</span>Tripulação</a></li>
+                <li class="menu__item"><a class="menu__link" href="#"><span
+                            class="menu__contador">03</span>Tecnologia</a>
+                </li>
             </ul>
         </nav>
     </header>
-    <main class="bg-home">
-        <section class="space-section">
-            <div class="space-wrapper">
-                <h2>Então, você quer viajar para</h2>
-                <h1>Espaço</h1>
-                <p>Vamos encarar; se você quer ir para o espaço, você também pode ir genuinamente espaço sideral e não pairar à beira dele. Bem, sente-se e relaxe porque nós lhe daremos uma experiência verdadeiramente fora deste mundo!</p>
+
+    <main class="fundo fundo-inicio">
+        <section class="espaco">
+            <div class="espaco__wrapper">
+                <h2 class="espaco__subtitulo">Então, você quer viajar para</h2>
+                <h1 class="espaco__titulo">Espaço</h1>
+                <p class="espaco__descricao">Vamos encarar; se você quer ir para o espaço, você também pode ir
+                    genuinamente espaço sideral e não pairar à beira dele. Bem, sente-se e relaxe porque nós lhe daremos
+                    uma experiência verdadeiramente fora deste mundo!</p>
             </div>
         </section>
 
-        <div class="circle-explore">
-            <a href="/pages/destinos/index.html">
-                <h2>Explorar</h2>
+        <div class="circulo-explorar">
+            <a class="circulo-explorar__link" href="/pages/destinos/index.html">
+                <h2 class="circulo-explorar__titulo">Explorar</h2>
             </a>
         </div>
     </main>
+
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>

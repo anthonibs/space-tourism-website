@@ -1,0 +1,14 @@
+/* LINKS CSS */
+@import url(/assets/styles/inicio/espaco/espaco__wrapper.css);
+@import url(/assets/styles/inicio/espaco/espaco__titulo.css);
+@import url(/assets/styles/inicio/espaco/espaco__subtitulo.css);
+@import url(/assets/styles/inicio/espaco/espaco__descricao.css);
+
+/* Section Space */
+.espaco {
+    height: 350px;
+    max-width: 580px;
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+}

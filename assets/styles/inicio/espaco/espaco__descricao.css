@@ -1,0 +1,6 @@
+.espaco__descricao {
+    font-weight: normal;
+    line-height: 1.5;
+    word-wrap: break-word;
+    color: var(--c-blue-light);
+}

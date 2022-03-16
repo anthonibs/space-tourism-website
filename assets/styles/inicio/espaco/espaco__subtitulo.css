@@ -1,0 +1,5 @@
+.espaco__subtitulo {
+    font-size: var( --f-size-5);
+    text-transform: uppercase;
+    color: var(--c-blue-light);
+}

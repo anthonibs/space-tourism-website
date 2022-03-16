@@ -1,14 +1,14 @@
 /* TRAÇO EMBAIXO DO NAVBAR */
-const navBar = document.querySelectorAll(".navbar-link")
+const navBar = document.querySelectorAll(".menu__link")
 const planetSlider = document.querySelector(".destination-aside-items")
 const planetNav = document.querySelectorAll(".nav-link-destination")
 
 
 // função para deslizar a navegação do site
 const clickNav = (e) => {
-    navBar.forEach(curNav => curNav.classList.remove("active"))
+    navBar.forEach(curNav => curNav.classList.remove("ativo"))
     const check = e.target
-    check.classList.add("active")
+    check.classList.add("ativo")
 }
 
 navBar.forEach(curNav => curNav.addEventListener("click", (ev) => clickNav(ev)))
